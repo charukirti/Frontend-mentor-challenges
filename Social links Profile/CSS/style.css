@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --dark-gray: hsl(0, 0%, 12%);
+  --off-gray: hsl(0, 0%, 8%);
+  --gray: hsl(0, 0%, 20%);
+  --white: hsl(0, 0%, 100%);
+  --green: hsl(75, 94%, 57%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: var(--off-gray);
+}
+
+.card__container {
+  background-color: var(--dark-gray);
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  text-align: center;
+  color: var(--white);
+  margin: 1rem;
+  border-radius: .75rem;
+}
+
+.card__container img {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  width: 75px;
+}
+
+.card__container h1 {
+  font-size: 1.75rem;
+}
+
+.card__container .locataion {
+  color: var(--green);
+  font-weight: 700;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.links__container {
+  margin-top: 1.75rem;
+}
+
+.links__container li:not(:last-child){
+  margin-bottom: 1rem;
+}
+
+.links__container li a {
+  display: block;
+  background-color: var(--gray);
+  padding: 1rem;
+  font-weight: 600;
+  border-radius: .5rem;
+  color: white;
+}
+
+.links__container li a:hover {
+  background-color: var(--green);
+  color: var(--off-gray)    ;
+}
