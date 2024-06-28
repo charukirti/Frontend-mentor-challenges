@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* navigation styling  */
+
+header {
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+.logo a {
+  font-size: 2rem;
+  color: #ecf0f1;
+  font-weight: 700;
+}
+
+sub {
+  font-size: 0.8rem;
+  margin-left: 0.2rem;
+  font-weight: 600;
+}
+
+.nav__links {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav__links .nav__links--link a {
+  background-color: blue;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.nav__links .nav__links--link i {
+  font-size: 1.23rem;
+  color: #fff;
+}
+
+.nav__links .nav__links--link:nth-child(1) a {
+  background-color: #2f3640;
+}
+
+.nav__links .nav__links--link:nth-child(2) a {
+  background-color: #2d3436;
+}
+
+.nav__links .nav__links--link:nth-child(3) a {
+  background-color: #00a0dc;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  sub {
+    display: none;
+  }
+
+  .nav__links .nav__links--link a {
+    background-color: blue;
+    padding: 0.9rem;
+    border-radius: 50%;
+  }
+
+  .nav__links .nav__links--link i {
+    font-size: 1.2rem;
+    color: #fff;
+  }
+}
+
+/* main content styling */
+
+main {
+  text-align: center;
+  background-color: #353b48;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.challenges__list--item {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: 700;
+}
+
+.challenges__list--item a {
+  color: #9c88ff;
+}
