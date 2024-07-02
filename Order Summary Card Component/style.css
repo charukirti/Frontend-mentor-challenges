@@ -1,0 +1,146 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* primary colors */
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  /* neutral colors */
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+html {
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background: url("./images/pattern-background-mobile.svg"),
+    linear-gradient(to bottom, var(--pale-blue), var(--pale-blue));
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 1rem;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+@media (min-width: 1024px) {
+  body {
+    background: url("./images/pattern-background-desktop.svg"),
+      linear-gradient(to bottom, var(--pale-blue), var(--pale-blue));
+    background-repeat: no-repeat;
+  }
+}
+
+.main-container {
+  width: 100%;
+  max-width: 23rem;
+  height: auto;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.hero_img {
+  border-radius: 1rem 1rem 0 0;
+  display: block;
+}
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.card-heading {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--dark-blue);
+}
+
+.card-description {
+  width: 95%;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--desaturated-blue);
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: var(--very-pale-blue);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.card-info > * {
+  flex-shrink: 0;
+}
+
+.plan {
+  color: var(--dark-blue);
+  font-weight: 700;
+}
+
+.price {
+  font-size: 1rem;
+  color: var(--desaturated-blue);
+}
+
+.change {
+  color: var(--bright-blue);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.change:hover {
+  color: var(--desaturated-blue);
+}
+
+.btn-large {
+  padding: 15px 60px;
+  background-color: var(--bright-blue);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.btn-large:hover {
+  background-color: var(--desaturated-blue);
+}
+
+.cancleBtn {
+  color: var(--desaturated-blue);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.cancleBtn:hover {
+  color: var(--dark-blue);
+  cursor: pointer;
+}

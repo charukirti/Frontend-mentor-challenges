@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* primary-colors */
+  --cyan: hsl(179, 62%, 43%);
+  --light-cyan: hsla(179, 62%, 43%, 0.8);
+  --bright-yellow: hsl(71, 73%, 54%);
+
+  /* neutral-colors */
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+html {
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+body {
+  background-color: var(--light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+  font-family: "Karla", sans-serif;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  /* border: 2px solid black; */
+  margin: 4rem;
+  max-width: 23rem;
+  width: 100%;
+}
+
+section {
+  text-align: left;
+  /* border: 2px solid blue; */
+  padding: 0.7rem 1.5rem;
+}
+
+.join_us {
+  border-radius: 10px 10px 0 0;
+  background-color: #fff;
+}
+
+.section_heading {
+  color: var(--cyan);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.section_sub_heading {
+  color: var(--bright-yellow);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.section_paragraph {
+  color: var(--grayish-blue);
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.pricing {
+  background-color: var(--cyan);
+}
+
+.pricing > h2 {
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.price {
+  color: var(--light-gray);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.price > span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.pricing > p {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.sign_up {
+  width: 16rem;
+  padding: 0.8rem;
+  color: #fff;
+  background-color: var(--bright-yellow);
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.why_us {
+  background-color: var(--light-cyan);
+  border-radius: 0 0 10px 10px;
+}
+
+.why_us > h3 {
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.why_us > ul li {
+  list-style-type: none;
+  margin-bottom: 0.2rem;
+  color: var(--light-gray);
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  main {
+    max-width: 40rem;
+    grid-template-rows: 1fr 1.2fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "join-us join-us"
+      "pricing why-us";
+  }
+
+  section {
+    padding: 2.4rem;
+  }
+
+  .join_us {
+    grid-area: join-us;
+  }
+
+  .pricing {
+    grid-area: pricing;
+    border-radius: 0 0 0 10px;
+  }
+
+  .why_us {
+    grid-area: why-us;
+    border-radius: 0 0 10px 0;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

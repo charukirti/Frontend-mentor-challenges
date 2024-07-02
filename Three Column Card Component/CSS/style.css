@@ -1,0 +1,108 @@
+:root {
+  /* primary-colors */
+
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* secondary-colors */
+
+  --Transparent-white: hsla(0, 0%, 100%, 0.75); /* Paragraph */
+  --Very-light-gray: hsl(0, 0%, 95%); /* background, headings, buttons */
+
+  /* fonts */
+
+  --primary-font: "Big Shoulders Display", cursive;
+  --secondary-font: "Lexend Deca", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+p {
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--Transparent-white);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: var(--primary-font);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--Very-light-gray);
+  margin-bottom: 1rem;
+}
+
+body {
+  background-color: var(--Very-light-gray);
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 23rem;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 2rem;
+}
+
+.card-sedans {
+  background: var(--Bright-orange);
+}
+
+.card-suvs {
+  background: var(--Dark-cyan);
+}
+
+.card-luxary {
+  background: var(--Very-dark-cyan);
+}
+.card {
+  padding: 1.8rem;
+}
+
+.card img {
+  margin-bottom: 1rem;
+}
+
+button {
+  margin-top: 2rem;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 30px;
+  font-size: 1rem;
+  background: #ffff;
+}
+
+button:hover {
+  background: transparent;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .container {
+    min-width: 60rem;
+  }
+  main {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2rem;
+  }
+}
