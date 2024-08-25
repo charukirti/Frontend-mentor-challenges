@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --purple: hsl(259, 100%, 65%);
+  --lighe-red: hsl(0, 100%, 67%);
+
+  --white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 94%);
+  --light-grey: hsl(0, 0%, 86%);
+  --smokey-gray: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light-grey);
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main-container {
+  width: 700px;
+  height: 540px;
+  background-color: var(--white);
+  border-radius: 20px;
+  border-bottom-right-radius: 120px;
+  padding: 30px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  width: 480px;
+  justify-content: space-around;
+  text-transform: uppercase;
+  color: var(--off-black);
+}
+
+.input-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-items label {
+  font-size: 12px;
+  letter-spacing: 0.2rem;
+  margin-bottom: 5px;
+}
+
+.input-items input {
+  width: 120px;
+  padding: 10px;
+  padding-left: 20px;
+  font-size: 32px;
+  font-weight: 700;
+  border-radius: 8px;
+  border: 1px solid var(--light-grey);
+  color: var(--off-black);
+}
+
+.input-items input:focus {
+  border: 1px solid var(--purple);
+  outline: none;
+}
+
+.error {
+  color: var(--lighe-red);
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: none;
+  margin-top: 5px;
+}
+
+.submit-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.line {
+  width: 100%;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+button {
+  padding: 20px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--purple);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--off-black);
+}
+
+.result-view {
+  font-size: 80px;
+  font-weight: 800;
+  font-style: italic;
+  margin-bottom: -20px;
+  color: var(--off-black);
+}
+
+span {
+  color: var(--purple);
+}
+
+@media (max-width: 600px) {
+  .main-container {
+    width: 350px;
+    height: 430px;
+    padding: 30px;
+    border-bottom-right-radius: 100px;
+  }
+
+  .input-container {
+    width: 100%;
+  }
+
+  .input-items input {
+    width: 90px;
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  .error {
+    width: 90px;
+  }
+
+  .submit-container {
+    margin-top: 20px;
+  }
+
+  button img {
+    width: 25px;
+  }
+
+  .line-sec {
+    border: 1px solid var(--light-grey);
+    width: 100%;
+  }
+
+  .result-view {
+    font-size: 50px;
+  }
+}
