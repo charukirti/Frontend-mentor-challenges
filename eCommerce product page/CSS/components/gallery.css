@@ -1,0 +1,36 @@
+main {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 30px 45px;
+}
+
+.gallery_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  flex: 1;
+
+  .img_tabs {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .img_tabs img {
+    width: 80px;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .img_thumbnail img {
+    width: 22rem;
+    height: auto;
+    border-radius: 10px;
+  }
+}
+
+.content_section {
+  flex: 1;
+}

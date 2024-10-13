@@ -5,11 +5,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="/CSS/style.css">
     <title>Frontend Mentor | E-commerce product page</title>
 </head>
 
 <body>
+    <div class="wrapper">
 
+        <div class="overlay"></div>
+
+        <!-- header  -->
+
+        <header>
+            <nav>
+                <div class="left_side">
+                    <img src="./images/icon-menu.svg" class="menu_icon" alt="menu icon">
+                    <img src="./images/logo.svg" class="logo" />
+
+                    <ul class="nav_links">
+                        <li><a href="#" class="nav_link">Collections</a></li>
+                        <li><a href="#" class="nav_link">Men</a></li>
+                        <li><a href="#" class="nav_link">Women</a></li>
+                        <li><a href="#" class="nav_link">About</a></li>
+                        <li><a href="#" class="nav_link">Contact</a></li>
+                    </ul>
+
+
+                </div>
+
+                <div class="right_side">
+                    <div class="cart">
+                        <button class="cart_icon">
+                            <img src="images/icon-cart.svg" alt="Cart">
+                            <span class="cart_count">3</span>
+                        </button>
+                        <div class="cart_dropdown">
+                            <h3>Cart</h3>
+                            <div class="cart_items">
+                                <div class="cart_item">
+                                    <img src="images/image-product-1.jpg" alt="Product" class="cart_item--image">
+                                    <div class="cart_item--details">
+                                        <p>Fall Limited Edition Sneakers</p>
+                                        <p>$125.00 x 3 <span class="total_price">$375.00</span></p>
+                                    </div>
+                                    <img src="./images/icon-delete.svg" alt="">
+                                </div>
+                            </div>
+                            <button class="checkout_btn">Checkout</button>
+                        </div>
+                    </div>
+                    <button class="user">
+                        <img src="images/image-avatar.png" alt="User" class="user_icon">
+                    </button>
+                </div>
+                <img src="./images/icon-close.svg" class="close_icon" alt="">
+            </nav>
+
+        </header>
+
+
+
+        <!-- main -->
+
+
+        <main>
+            <section class="gallery_section">
+                <div class="img_thumbnail">
+                    <img src="./images/image-product-1.jpg" alt="" />
+                </div>
+                <div class="img_tabs">
+                    <img src="./images/image-product-1.jpg" alt="" />
+                    <img src="./images/image-product-2.jpg" alt="" />
+                    <img src="./images/image-product-3.jpg" alt="" />
+                    <img src="./images/image-product-4.jpg" alt="" />
+                </div>
+            </section>
+            <section class="content_section">
+                <h3>Sneaker Company</h3>
+                <h1>Fall Limited Edition Sneakers</h1>
+            </section>
+        </main>
+
+    </div>
+
+
+
+    <script type="module" src="JS/script.js"></script>
 </body>
 
 </html>
